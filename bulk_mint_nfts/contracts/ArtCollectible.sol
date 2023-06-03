@@ -4,17 +4,17 @@ pragma solidity >=0.4.22 <0.9.0;
 import '@openzeppelin/contracts/token/ERC1155/ERC1155.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract ArtCollectible is Ownable, ERC1155 {
+contract Max_Love_AltCoins is Ownable, ERC1155 {
     // Base URI
     string private baseURI;
     string public name;
 
     constructor()
         ERC1155(
-            'ipfs://QmUusoGauKGU6EsGDLbqPiZK8PEnHDRYHa4c9yvJxhTHcg/{id}.json'
+            'https://cdn.maxl.space/nft/{id}.json'
         )
     {
-        setName('Mandelbrot Julia Set Collection');
+        setName('Max Love AltCoins');
     }
 
     function setURI(string memory _newuri) public onlyOwner {
