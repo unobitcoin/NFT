@@ -4,7 +4,7 @@ pragma solidity >=0.4.22 <0.9.0;
 import '@openzeppelin/contracts/token/ERC1155/ERC1155.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract Max_Love_AltCoins is Ownable, ERC1155 {
+contract MaxLoveAltCoins is Ownable, ERC1155 {
     // Base URI
     string private baseURI;
     string public name;
